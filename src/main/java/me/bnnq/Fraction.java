@@ -9,7 +9,7 @@ private int numerator;
 
     public Fraction()
     {
-        //empty
+        this(0, 1);
     }
 
     public Fraction(int numerator, int denominator)

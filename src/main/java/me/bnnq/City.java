@@ -13,7 +13,7 @@ public class City
 
     public City()
     {
-        //empty
+        this("N/A", "N/A", "N/A", 0, "N/A", "N/A");
     }
     public City(String name, String country, String region, int population, String postalCode, String phoneCode)
     {

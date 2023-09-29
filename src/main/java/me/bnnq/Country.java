@@ -13,7 +13,7 @@ public class Country
 
     public Country()
     {
-        //empty
+        this("N/A", "N/A", 0, "N/A", new String[0], "N/A");
     }
 
     public Country(String name, String continent, int population, String capital, String[] citiesNames, String phoneCode)

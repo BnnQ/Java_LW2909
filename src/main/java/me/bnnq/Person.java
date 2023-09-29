@@ -21,7 +21,7 @@ public class Person
 
     public Person()
     {
-        //empty
+        this("N/A", LocalDate.now(), "N/A", "N/A", "N/A", "N/A");
     }
 
     public Person(String fullName, LocalDate dateOfBirth, String contactNumber, String city, String country, String homeAddress)
