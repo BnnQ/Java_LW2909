@@ -57,7 +57,7 @@ public class Main
         System.out.printf("Div: %s\n", fraction.divide(fraction2).simplify());
     }
 
-public static void fifthTask()
+    public static void fifthTask()
     {
         Book book = new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954, "Allen & Unwin", "Fantasy", 1178);
         System.out.println(book);
@@ -65,7 +65,8 @@ public static void fifthTask()
         System.out.println(book);
     }
 
-    public static void sixthTask() {
+    public static void sixthTask()
+    {
         Car car = new Car("X5", "BMW", 2018, 3.0);
         System.out.println(car);
 
