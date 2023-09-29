@@ -1,5 +1,7 @@
 package me.bnnq;
 
+import me.bnnq.enums.VolumeUnit;
+
 @SuppressWarnings("unused")
 public class Main
 {
@@ -9,6 +11,8 @@ public class Main
         //secondTask();
         //thirdTask();
         //fourthTask();
+        //fifthTask();
+        //sixthTask();
     }
 
     public static void firstTask()
@@ -51,6 +55,22 @@ public class Main
         System.out.printf("Sub: %s\n", fraction.subtract(fraction2).simplify());
         System.out.printf("Mul: %s\n", fraction.multiply(fraction2).simplify());
         System.out.printf("Div: %s\n", fraction.divide(fraction2).simplify());
+    }
+
+public static void fifthTask()
+    {
+        Book book = new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954, "Allen & Unwin", "Fantasy", 1178);
+        System.out.println(book);
+        book.initialize();
+        System.out.println(book);
+    }
+
+    public static void sixthTask() {
+        Car car = new Car("X5", "BMW", 2018, 3.0);
+        System.out.println(car);
+
+        System.out.println("Engine volume in cubic centimeters: " + car.getEngineVolume(VolumeUnit.CUBIC_CENTIMETER));
+        System.out.println("Engine volume in cubic meters: " + car.getEngineVolume(VolumeUnit.CUBIC_METER));
     }
 
 }
