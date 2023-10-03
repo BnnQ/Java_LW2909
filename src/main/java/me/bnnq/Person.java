@@ -17,6 +17,7 @@ public class Person
     private String city;
     private String country;
     private String homeAddress;
+    private static int instanceCount = 0;
 
     public Person()
     {
@@ -31,6 +32,7 @@ public class Person
         this.city = city;
         this.country = country;
         this.homeAddress = homeAddress;
+        instanceCount++;
     }
 
     public void initialize()
@@ -95,6 +97,11 @@ public class Person
     public String getHomeAddress()
     {
         return homeAddress;
+    }
+
+    public static int getInstanceCount()
+    {
+        return instanceCount;
     }
 
 }
